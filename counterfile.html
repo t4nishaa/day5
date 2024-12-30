@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>javascript</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="m-5 text-center">
+        <h1 id="count">0</h1>
+        <button class="btn btn-primary" id="increment"onclick="increment()">increment</button>
+        <button class="btn btn-primary" id="decrement"onclick="decrement()">decrement</button>
+    </div>
+    <script>
+        let count=0;
+        function increment(){
+            count=count+1;
+            console.log(document.getElementById("count").textContent)
+            document.getElementById("count").textContent=count
+        }
+        function decrement(){
+            count=count-1;
+            document.getElementById("count").textContent=count
+        }
+
+        
+    </script>
+    
+</body>
+</html>
